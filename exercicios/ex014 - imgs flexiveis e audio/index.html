@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias </title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <picture>
+        <source media="(max-width:750px)" srcset="imgs/pequena.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imgs/medio.png" type="image/png">
+        <img src="imgs/grande.png" alt="Imagem Flexivel">
+    </picture>
+<h1>Reproduzindo Audio</h1>
+<audio src="midia/leans.mp"controls autoplay> </audio>
+
+<h1></h1>
+    <audio preload="metadata" controls>
+
+<source src="midia/leans.mp3" type="audio/mpeg">
+<source src="midia/leans.ogg" type="audio/ogg">
+<source src="midia/leans.wav" type="audio/wav">
+<p>
+    se nao tocar clique <a href="midia/leans.mp3" download="leans.mp3">aqui</a> para download
+</p>
+    </audio>
+    
+</body>
+</html>

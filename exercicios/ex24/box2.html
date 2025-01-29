@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+<style>
+    body{
+        background-color: rgb(211, 211, 211);
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+header{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0) ;
+display:flex ;
+padding: 5px;
+margin: 10px;
+box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.589);
+
+}
+
+nav{
+    color: rgb(233, 233, 233);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    background-color: orange;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 4px 3px 0px #00000040;
+ border-radius: 4px;
+}
+nav > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: inline;
+    margin: 5px;
+    
+}
+
+
+a > img{
+align-items: center;
+padding-right: 6px;
+
+
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.589);
+
+}
+
+aside{
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight:bold;
+    padding: 2px;
+   
+}
+#bola{
+            background-color: rgb(0, 136, 255);
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            border-radius: 50%;
+            box-shadow: inset 10px 10px 10px 20px rgba(0, 0, 0, 0.459);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-30px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+#bola > p{
+    padding: 38px;
+    color: aliceblue;
+ font-weight: bold;
+    text-align: center;
+    
+}
+</style>
+</head>
+<body>
+    <header>
+
+        <h1>Meu site</h1>
+        <nav>
+        <a href="box1.html"> <img src="favicon.ico" alt="">LINK
+       </a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        </nav>
+    </header>
+    <main>
+<section id="assuntos">
+<p>Futebol</p>
+
+</section>
+<section id="noticias">
+<article>
+<h2>Noticias</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam ducimus dolores eos, facere, delectus quo beatae culpa ut numquam corrupti, repellendus voluptatem odio tempora corporis ipsa mollitia optio nobis.</p>
+<aside>
+    Artigo escrito
+</aside>
+
+
+
+
+</article>
+
+
+</section>
+    </main>
+    <footer> Desenvolvido Por Pedro Viana</footer>
+    <Div id="bola"> <p>sim</p></Div>
+</body>
+</html>
