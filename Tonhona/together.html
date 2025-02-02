@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Sucesso</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+    
+    @media only screen and (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px); /* 2 colunas em telas menores */
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .gallery-item {
+                width: 100%; /* 1 coluna em telas muito pequenas */
+            }
+            header h1 {
+                font-size: 1.2em; /* Ajusta o tamanho da fonte do header para telas pequenas */
+            }
+        }
+    
+        .photo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .photo-container img {
+            width: 250px;
+            height: 300px;
+            border-radius: 3%;
+            box-shadow: 3px 3px 7px rgb(0, 0, 0); /* Sombra da imagem */
+            padding: 3px;
+            border: 3px solid rgba(0, 0, 0, 0.637);
+        }
+
+        /* Estilos para a barra de navegação */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .nav-bar a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+            width: 100px;
+            height: 70px;
+            border-radius: 4%;
+            background: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            color: black;
+        }
+        .nav-bar img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-container">
+            <img src="tonhaos.jpg" alt="Foto acima do contador">
+        </div>
+        <div class="counter">
+            <h2>Tempo dos Tonhãos</h2>
+            <div id="timeCounter"></div>
+        </div>
+       
+    </div>
+    <script>
+        // Função para calcular o tempo desde a data inicial até agora
+        function updateTimeCounter() {
+            const startDate = new Date('2024-04-02T00:00:00'); // Substitua pela data inicial desejada
+            const now = new Date();
+            const timeDiff = now - startDate;
+
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById('timeCounter').textContent = 
+                `${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
+        }
+
+        // Atualiza o contador de tempo ao carregar a página e a cada segundo
+        updateTimeCounter();
+        setInterval(updateTimeCounter, 1000);
+    </script>
+</body>
+</html>

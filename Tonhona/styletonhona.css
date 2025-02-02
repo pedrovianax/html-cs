@@ -1,0 +1,156 @@
+@media only screen and (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px); /* 2 colunas em telas menores */
+    }
+}
+@media only screen and (max-width: 480px) {
+    .gallery-item {
+        width: 100%; /* 1 coluna em telas muito pequenas */
+    }
+    header h1 {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte do header para telas pequenas */
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+   
+
+}
+body {
+    
+    background: linear-gradient(to bottom, #2c383d, rgba(0, 0, 0, 0.884), #111111); 
+    background-size: cover; /* Garante que o gradiente cubra toda a tela */
+    background-attachment: fixed; /* Evita que o fundo se mova com o conteúdo */
+    
+
+
+    
+}
+#principal{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.87);
+    margin: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: row; /* Organiza os itens horizontalmente */
+    align-items: center;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    border: 2px solid #000000c2;
+    padding: 30px; /* Ajuste o padding se necessário */
+    background-color: #73121A;
+    border-radius: 20px;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.712); /* Sombra suave */
+    width: 400px; /* Ajuste a largura da caixa branca conforme necessário */
+    height: 400px; /* Ajuste a altura da caixa branca conforme necessário */
+    position: relative;
+    margin: auto;
+}
+.container > p {
+    
+    color: #ffffff;
+    font: 600 35px  "Poppins", sans-serif;
+    text-align: center; /* Centraliza o texto */
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.87);
+    position: absolute; /* Posiciona o texto em relação ao container */
+    top: 1px; /* Ajuste a distância do topo conforme necessário */
+    left: 50%; /* Centraliza o texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que o texto fique exatamente no centro */
+    padding-top: 10px;
+
+    
+
+ 
+   
+
+
+}
+
+.image-container {
+    margin-right: 5px; /* Espaço entre a imagem e o formulário */
+    display: block;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.image-container img {
+    width: 180px; /* Ajusta o tamanho da imagem conforme necessário */
+    height: 180px; /* Adiciona a unidade px para garantir a altura correta */
+    border-radius: 2%;
+    box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.829); /* Sombra da imagem */
+    padding: 3px;
+    border:2px solid #0e0e0e;
+
+}
+
+.form-container {
+    display: block;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center;
+    width: 100%;
+
+}
+
+#password {
+    display: block;
+    width: 200px; /* Aumenta a largura do campo de senha */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ffffffc0;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.925); /* Sombra do campo de senha */
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte se necessário */
+    gap: 20px; /* Aumenta o espaço entre os botões */
+    margin-bottom: 10px; /* Adiciona um espaço entre as linhas de botões */
+    
+}
+
+.button-row button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-shadow: 1px 2px 2px #0e0e0e;
+    cursor: pointer;
+    background-color: #405259;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.616); /* Sombra dos botões */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+.button-row button:hover {
+    background-color: #e93232; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.button-row button:active {
+    background-color: #286aa0; /* Cor ainda mais escura ao clicar */
+    transform: scale(1); /* Retorna ao tamanho original ao clicar */
+}
+
+.error-message {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 1px 1px 1px rgba(58, 58, 58, 0.733);
+}
