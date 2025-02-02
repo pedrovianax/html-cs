@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Senha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styletonhona.css"> <!-- Certifique-se de que o caminho para o CSS está correto -->
+</head>
+
+
+
+<body>
+<h1 id="principal"> Bem-Vinda Tonhona</h1>
+    
+    <audio  autoplay loop>
+    <source src="(instrumental) (Beat) Yunk Vino - Leans Pt. 2 (1).mp3" type="audio/mp3">
+    
+</audio>
+
+    <div class="container" > 
+        <p>LOGIN</p>
+        <div class="image-container"> 
+            <img src="Imagem do WhatsApp de 2024-08-27 à(s) 16.19.03_3348c8fe.jpg" alt="Imagem"> <!-- Substitua pelo caminho da sua imagem -->
+        </div> 
+        <div class="form-container"> 
+            <input type="text" id="password" readonly placeholder="Digite a senha">
+            <div class="button-row">
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+            </div>
+            <div class="button-row">
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+            </div>
+            <div class="button-row">
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+            </div>
+            <div class="button-row">
+                <button onclick="appendNumber(0)">0</button>
+                <button onclick="clearPassword()">C</button>
+                <button onclick="submitPassword()">OK</button>
+            </div>
+            <div id="error-message" class="error-message"></div>
+        </div>
+    </div>
+
+    <script>
+        const correctPassword = '0204'; // Defina a senha correta aqui
+
+        function appendNumber(number) {
+            const passwordField = document.getElementById('password');
+            passwordField.value += number;
+        }
+
+        function clearPassword() {
+            const passwordField = document.getElementById('password');
+            passwordField.value = '';
+            document.getElementById('error-message').textContent = '';
+        }
+
+        function submitPassword() {
+            const password = document.getElementById('password').value;
+            if (password === correctPassword) {
+                window.location.href = 'together.html'; // Substitua pelo caminho para a página de destino
+            } else {
+                document.getElementById('error-message').textContent = 'Senha incorreta, tente novamente.';
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+</body>
+</html>
