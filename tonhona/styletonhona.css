@@ -2,39 +2,66 @@
     .gallery-item {
         width: calc(50% - 20px); /* 2 colunas em telas menores */
     }
+
+    .container {
+        width: 90%; /* Ajusta a largura para telas menores */
+        height: auto; /* Remove altura fixa para permitir ajuste dinâmico */
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        padding: 20px; /* Ajusta o padding para se ajustar melhor */
+    }
 }
+
 @media only screen and (max-width: 480px) {
     .gallery-item {
         width: 100%; /* 1 coluna em telas muito pequenas */
     }
+
+    .container {
+        width: 90%; /* Ajusta a largura do container */
+        padding: 15px; /* Reduz o padding para telas menores */
+        margin: 10px auto; /* Adiciona uma margem de 10px em cima e embaixo */
+    }
+    
+    .image-container img {
+        width: 120px; /* Ajusta o tamanho da imagem para telas menores */
+        height: 120px; /* Ajusta a altura da imagem */
+    }
+
     header h1 {
         font-size: 1.2em; /* Ajusta o tamanho da fonte do header para telas pequenas */
     }
+    
+    #password {
+        width: 100%; /* Faz o campo de senha ocupar 100% da largura */
+    }
+
+    .button-row button {
+        width: 45px; /* Ajusta o tamanho do botão */
+        height: 45px; /* Ajusta a altura do botão */
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
-   
-
 }
+
 body {
-    
+    height: 100%;
     background: linear-gradient(to bottom, #2c383d, rgba(0, 0, 0, 0.884), #111111); 
     background-size: cover; /* Garante que o gradiente cubra toda a tela */
     background-attachment: fixed; /* Evita que o fundo se mova com o conteúdo */
-    
-
-
-    
 }
-#principal{
+
+#principal {
     color: #ffffff;
     text-align: center;
     font-family: "Poppins", sans-serif;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.87);
     margin: 10px;
 }
+
 .container {
     display: flex;
     flex-direction: row; /* Organiza os itens horizontalmente */
@@ -49,11 +76,12 @@ body {
     height: 400px; /* Ajuste a altura da caixa branca conforme necessário */
     position: relative;
     margin: auto;
+    max-width: 100%;
 }
+
 .container > p {
-    
     color: #ffffff;
-    font: 600 35px  "Poppins", sans-serif;
+    font: 600 35px "Poppins", sans-serif;
     text-align: center; /* Centraliza o texto */
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.87);
     position: absolute; /* Posiciona o texto em relação ao container */
@@ -61,13 +89,6 @@ body {
     left: 50%; /* Centraliza o texto horizontalmente */
     transform: translateX(-50%); /* Ajusta para que o texto fique exatamente no centro */
     padding-top: 10px;
-
-    
-
- 
-   
-
-
 }
 
 .image-container {
@@ -75,7 +96,6 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-  
 }
 
 .image-container img {
@@ -84,8 +104,7 @@ body {
     border-radius: 2%;
     box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.829); /* Sombra da imagem */
     padding: 3px;
-    border:2px solid #0e0e0e;
-
+    border: 2px solid #0e0e0e;
 }
 
 .form-container {
@@ -93,7 +112,6 @@ body {
     flex-direction: column; /* Alinha os itens verticalmente */
     align-items: center;
     width: 100%;
-
 }
 
 #password {
@@ -117,7 +135,6 @@ body {
     flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte se necessário */
     gap: 20px; /* Aumenta o espaço entre os botões */
     margin-bottom: 10px; /* Adiciona um espaço entre as linhas de botões */
-    
 }
 
 .button-row button {
@@ -134,7 +151,7 @@ body {
     font-weight: 600;
     font-style: normal;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.616); /* Sombra dos botões */
-    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    transition: background-color red 0.3s, transform 0.2s; /* Transições suaves */
 }
 
 .button-row button:hover {
