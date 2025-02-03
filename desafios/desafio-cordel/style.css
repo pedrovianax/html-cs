@@ -3,7 +3,7 @@
     padding: 0px;
 }
 html,body{
-    min-height: 100vh;
+    min-height: 100vw;
     background-color: gray;
 
 }
@@ -13,9 +13,9 @@ header{
 
 }
 header >h1{
-    padding-top: 50px;
+    padding: 10px;
     color: white;
-    font-size: 45px;
+    font-size: 6vw;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -39,9 +39,12 @@ section{
 padding-top: 10vh;
 padding-bottom: 10vh;
 line-height: 2em;
-font-size: 35px; 
+font-size: 4.1vh; 
 padding-left: 30px;                
 
+}
+section > p{
+    padding-bottom: 2em;
 }
     
 
@@ -50,28 +53,27 @@ padding-left: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .imagem{
-
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .imagem > p{
+padding: 5px;
 color: white;
-background-color: rgba(0, 0, 0, 0.651);
-width: 500px;
+background-color: rgba(0, 0, 0, 0.507);
+display: inline-block;
 border-radius: 4px;
+
 
 
 }
 #img1{
 background-image: url(imagens/background001.jpg);
-background-position: left center;
-background-size: cover;
-background-attachment: fixed;
+background-position: right center;
+
 }
 #img2{
 background-image: url(imagens/background002.jpg);
-background-position: left bottom;
-background-size: cover;
-background-attachment: fixed;
 
 }
 footer{
