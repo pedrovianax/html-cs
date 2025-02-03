@@ -47,7 +47,7 @@ body {
     border-radius: 20px;
     box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.712); /* Sombra suave */
     max-width:400px;
-    min-height: 200px; /* Ajuste a largura da caixa branca conforme necessário */
+    min-height: 40px; /* Ajuste a largura da caixa branca conforme necessário */
     height: 400px; /* Ajuste a altura da caixa branca conforme necessário */
     position: relative;
     margin: auto;
@@ -91,10 +91,12 @@ body {
 }
 
 .form-container {
-    display: block;
+    display:block;
     flex-direction: column; /* Alinha os itens verticalmente */
     align-items: center;
     width: 100%;
+   
+    
 
 }
 
