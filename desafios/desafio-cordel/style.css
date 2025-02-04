@@ -41,7 +41,7 @@ header{
 header >h1{
     padding-top: 15px;
     color: rgb(255, 255, 255);
-    font-size: 6vw;
+    font-size: 6.6vw;
     text-align: center;
     font-family: var(--font2);
     
@@ -52,6 +52,7 @@ header >h2{
     text-align: center;
     font-family: var(--font1);
     font-weight: 400;
+    font-size: 20px;
 
 
 }
