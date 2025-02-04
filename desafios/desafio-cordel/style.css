@@ -33,12 +33,19 @@
 html,body{
     min-height: 100vw;
     background-color: gray;
+    padding-top: 60px; /* Isso vai empurrar o conteúdo abaixo do header fixo */
 
 }
 header{
+ 
     background-color: black;
     height: 150px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garantir que o header fique sobre os outros elementos */
+  
 }
 header >h1{
     padding-top: 15px;
@@ -65,8 +72,9 @@ a{
 header a:hover, footer a:hover{
     text-decoration: underline;
 }
-
+   
 section{
+    
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
