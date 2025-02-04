@@ -35,13 +35,13 @@ html,body{
 }
 header{
     background-color: black;
-    height: 200px;
+    height: 150px;
 
 }
 header >h1{
     padding-top: 15px;
     color: rgb(255, 255, 255);
-    font-size: 6.6vw;
+    font-size: 45px;
     text-align: center;
     font-family: var(--font2);
     
