@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
@@ -24,6 +25,7 @@
     --font3: 'Creato', sans-serif;
     --font4: 'Creato2', sans-serif;
 }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -79,7 +81,6 @@ section > p{
     
 }
     
-
 .normal{
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -98,8 +99,6 @@ section > p{
     display: inline-block;
     border-radius: 4px;
     text-shadow: 3px 3px 1px rgb(0, 0, 0);
-
-
 
 }
 #img1{
