@@ -1,3 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    font: var()
+}
+
+@font-face {
+    font-family:'Nexa' ;
+    src: url(fonts/Nexa-Heavy.ttf) format(Truetype);
+    
+}
+@font-face {
+    font-family: 'Creato';
+    src: url(fonts/CreatoDisplay-BoldItalic.otf) format(Opentype);
+}
+@font-face {
+    font-family: 'Creato2';
+    src: url(fonts/CreatoDisplay-RegularItalic.otf) format(Opentype);
+}
+
+:root{
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Nexa', sans-serif;
+    --font3: 'Creato', sans-serif;
+    --font4: 'Creato2', sans-serif;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -13,17 +39,19 @@ header{
 
 }
 header >h1{
-    padding: 10px;
-    color: rgb(255, 0, 0);
+    padding-top: 15px;
+    color: rgb(255, 255, 255);
     font-size: 6vw;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font2);
+    
 }
 header >h2{
-    padding-top: 30px;
+    padding-top: 15px;
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font1);
+    font-weight: 400;
 
 
 }
@@ -31,20 +59,23 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
-header a:hover{
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
 section{
-padding-top: 10vh;
-padding-bottom: 10vh;
-line-height: 2em;
-font-size: 4.1vh; 
-padding-left: 30px;                
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 4.1vh; 
+    padding-left: 30px;                
 
 }
 section > p{
     padding-bottom: 2em;
+    font-family: var(--font4);
+    font-weight: 700;
+    
 }
     
 
@@ -52,35 +83,41 @@ section > p{
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .imagem{
+    box-shadow: inset 1px 1px 25px 20px rgba(0, 0, 0, 0.541);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .imagem > p{
-padding: 5px;
-color: white;
-background-color: rgba(0, 0, 0, 0.507);
-display: inline-block;
-border-radius: 4px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: inline-block;
+    border-radius: 4px;
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
 
 
 
 }
 #img1{
-background-image: url(imagens/background001.jpg);
-background-position: right center;
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
 
 }
 #img2{
-background-image: url(imagens/background002.jpg);
+    background-image: url(imagens/background002.jpg);
 
 }
 footer{
-padding-top: 10px;
-background-color: black;
-height: 35px;
-color: white;
-text-align: center;
-font-size: 20px;
-}
+    padding: 10px;
+    background-color: black;
+    height: 20px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--font1);
+    font-weight: 300;
+
+    }
